@@ -30,9 +30,9 @@ var time = $('#3a').text
 
  if (h === time) {
     time.style = "background-color: red; color: white;";
-    } else (h > "9"); {
+    } else (h > time); {
     time.style = "background-color: #77dd77; color: white;"; 
-    } if (h < "9"); {
+    } if (h < time); {
     time.style = "background-color: #d3d3d3; color: white;"; 
   }
 
