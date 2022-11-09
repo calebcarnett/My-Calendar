@@ -3,6 +3,12 @@ body {
   font-size: 16px;
 }
 
+.p-5 {
+  text-align: center;
+}
+
+
+
 textarea {
   background: transparent;
   border: none;

@@ -21,3 +21,24 @@ $(function () {
   //
   // TODO: Add code to display the current date in the header of the page.
 });
+
+var today = dayjs();
+$('#1a').text(today.format('MMM D, YYYY: h:mm A'));
+
+var hour = today.format("h");
+var takeOut;
+if (hour === "9") {
+  document.getElementById('hour-9').style = "background-color: red; color: white;";
+   } else (hour > "9"); {
+  document.getElementById('hour-9').style = "background-color: #77dd77; color: white;"; 
+   } if (hour < "9"); {
+  document.getElementById('hour-9').style = "background-color: #d3d3d3; color: white;"; 
+   }
+
+  
+  
+
+
+
+
+
