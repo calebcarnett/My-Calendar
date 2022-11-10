@@ -39,9 +39,13 @@ console.log(hour);
 console.log(time);
 
 $("#timeofday").each(function() {
-  if (hour !== time) {
+  if (hour === time) {
     $('.time-block').addClass("present");
-  } 
+  } else if (hour > time) {
+    $('.time-block').addClass("future");
+  } else (hour < time);  {
+    $('.time-block').addClass("past");
+  }
 });
 
 
