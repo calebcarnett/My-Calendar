@@ -24,21 +24,19 @@ $(function () {
 
 
 
-
-
-
-
 var today = dayjs();
 $('#1a').text(today.format('MMM D, YYYY: h:mm A'));
-
+//This makes the hour variable only pull the hour and AM/PM
 var hour = today.format("hA");
-
+//This is grabbing the text out of the ID, I have the same ID set for all my time periods
 var time = $('#timeofday').text();
 
+//Confirming the two sets of data are the exact same
 console.log(hour);
 console.log(time);
 
-$("#timeofday").each(function() {
+//Trying to run a function to loop through the texts in my #timeofday ID's and compare them. 
+time.each(function() {
   if (hour === time) {
     $('.time-block').addClass("present");
   } else if (hour > time) {
