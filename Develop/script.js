@@ -22,26 +22,34 @@ $(function () {
   // TODO: Add code to display the current date in the header of the page.
 });
 
+
+
+
+
+
+
 var today = dayjs();
 $('#1a').text(today.format('MMM D, YYYY: h:mm A'));
 
-var h = today.format("h");
-var time = $('#3a').text
+var hour = today.format("hA");
 
- if (h === time) {
-    time.style = "background-color: red; color: white;";
-    } else (h > time); {
-    time.style = "background-color: #77dd77; color: white;"; 
-    } if (h < time); {
-    time.style = "background-color: #d3d3d3; color: white;"; 
-  }
+var time = $('#timeofday').text();
 
-  
-  	
-var really = $( "div.time").text();
-console.log(really);
+console.log(hour);
+console.log(time);
+
+$("#timeofday").each(function() {
+  if (hour !== time) {
+    $('.time-block').addClass("present");
+  } 
+});
 
 
-var rootEl = $('#root');
+
+
+
+
+
+
 
 
