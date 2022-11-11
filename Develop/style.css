@@ -5,11 +5,11 @@ body {
 
 .p-5 {
   text-align: center;
+  color: #000000;  
 }
 
-
-
 textarea {
+  text-align: center;
   background: transparent;
   border: none;
   resize: none;
@@ -20,6 +20,7 @@ textarea {
 
 .description {
   white-space: pre-wrap;
+  
 }
 
 .time-block {
