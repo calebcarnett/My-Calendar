@@ -29,6 +29,8 @@ THEN the text for that event is saved in local storage
 WHEN I refresh the page
 THEN the saved events persist
 ```
+# Live link to application
+https://calebcarnett.github.io/My-Calendar/
 
 # The following picture demonstrates the application functionality:
 ![image](https://user-images.githubusercontent.com/111102789/201416152-0b4863ac-b3de-4fd6-a831-c07b4afa5e98.png)
