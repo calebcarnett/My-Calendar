@@ -3,8 +3,7 @@ $(document).ready(function() {
   $("#1a").text(today.format("MMM D, YYYY: h:mm A"));
   //This makes the hour variable only pull the hour and AM/PM
   var hour = today.hour();
-  console.log(hour)
-  
+
   var timeBlocks = $(".time-block");
   //Changes the color of each time-block class depending on the hour of the day and if it matches the id within the class
   timeBlocks.each(function () {
